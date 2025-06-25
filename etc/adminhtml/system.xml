@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ManiyaTech
+ *
+ * @author        Milan Maniya
+ * @package       ManiyaTech_Seo
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="seo_config" translate="Meta Detail" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Meta Detail</label>
+            <tab>maniyatech</tab>
+            <resource>ManiyaTech_Seo::seo_config</resource>
+            <group id="general" translate="Meta Detail Information" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="enabled" translate="Enable Module" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="category2" translate="Category 1 Meta Details" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Category 1 Meta Details</label>
+                <depends><field id="seo_config/general/enabled">1</field></depends>
+                <field id="enabled" translate="Enable Category 1 Meta Details" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Category 1 Meta Details</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="meta_title" translate="Meta Title" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title</label>
+                    <comment><![CDATA[<small>[name] = Category Name<br />[description] = Description<br />[attribute_code] = Attribute Value<br /><strong>For example: [name] - [description].</strong></small><br />Recommendation Meta title – <b>65 characters</b>.]]>
+                    </comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_keyword" translate="Meta Keyword" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Keyword</label>
+                    <comment><![CDATA[Recommendation Meta keywords – <b>No more than 10 keyword phrases</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_description" translate="Meta Description" type="textarea" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description</label>
+                    <comment><![CDATA[Recommendation Meta description – <b>160 characters</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+            </group>
+            <group id="category3" translate="Category 2 Meta Details" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Category 2 Meta Details</label>
+                <depends><field id="seo_config/general/enabled">1</field></depends>
+                <field id="enabled" translate="Enable Category 2 Meta Details" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Category 2 Meta Details</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="meta_title" translate="Meta Title" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title</label>
+                    <comment><![CDATA[<small>[name] = Category Name<br />[description] = Description<br />[attribute_code] = Attribute Value<br /><strong>For example: [name] - [description].</strong></small><br />Recommendation Meta title – <b>65 characters</b>.]]>
+                    </comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_keyword" translate="Meta Keyword" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Keyword</label>
+                    <comment><![CDATA[Recommendation Meta keywords – <b>No more than 10 keyword phrases</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_description" translate="Meta Description" type="textarea" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description</label>
+                    <comment><![CDATA[Recommendation Meta description – <b>160 characters</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+            </group>
+            <group id="category4" translate="Category 3 Meta Details" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Category 3 Meta Details</label>
+                <depends><field id="seo_config/general/enabled">1</field></depends>
+                <field id="enabled" translate="Enable Category 3 Meta Details" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Category 3 Meta Details</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="meta_title" translate="Meta Title" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title</label>
+                    <comment><![CDATA[<small>[name] = Category Name<br />[description] = Description<br />[attribute_code] = Attribute Value<br /><strong>For example: [name] - [description].</strong></small><br />Recommendation Meta title – <b>65 characters</b>.]]>
+                    </comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_keyword" translate="Meta Keyword" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Keyword</label>
+                    <comment><![CDATA[Recommendation Meta keywords – <b>No more than 10 keyword phrases</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_description" translate="Meta Description" type="textarea" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description</label>
+                    <comment><![CDATA[Recommendation Meta description – <b>160 characters</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+            </group>
+            <group id="category5" translate="Category 4 Meta Details" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Category 4 Meta Details</label>
+                <depends><field id="seo_config/general/enabled">1</field></depends>
+                <field id="enabled" translate="Enable Category 4 Meta Details" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Category 4 Meta Details</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="meta_title" translate="Meta Title" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title</label>
+                    <comment><![CDATA[<small>[name] = Category Name<br />[description] = Description<br />[attribute_code] = Attribute Value<br /><strong>For example: [description] - [description].</strong></small><br />Recommendation Meta title – <b>65 characters</b>.]]>
+                    </comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_keyword" translate="Meta Keyword" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Keyword</label>
+                    <comment><![CDATA[Recommendation Meta keywords – <b>No more than 10 keyword phrases</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_description" translate="Meta Description" type="textarea" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description</label>
+                    <comment><![CDATA[Recommendation Meta description – <b>160 characters</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+            </group>
+            <group id="category6" translate="Category 5 Meta Details" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Category 5 Meta Details</label>
+                <depends><field id="seo_config/general/enabled">1</field></depends>
+                <field id="enabled" translate="Enable Category 5 Meta Details" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Category 5 Meta Details</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="meta_title" translate="Meta Title" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title</label>
+                    <comment><![CDATA[<small>[name] = Category Name<br />[description] = Description<br />[attribute_code] = Attribute Value<br /><strong>For example: [name] - [description].</strong></small><br />Recommendation Meta title – <b>65 characters</b>.]]>
+                    </comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_keyword" translate="Meta Keyword" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Keyword</label>
+                    <comment><![CDATA[Recommendation Meta keywords – <b>No more than 10 keyword phrases</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_description" translate="Meta Description" type="textarea" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description</label>
+                    <comment><![CDATA[Recommendation Meta description – <b>160 characters</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+            </group>
+            <group id="product" translate="Product Meta Details" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product Meta Details</label>
+                <depends><field id="seo_config/general/enabled">1</field></depends>
+                <field id="enabled" translate="Enable Product Meta Details" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Product Meta Details</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="meta_title" translate="Meta Title" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title</label>
+                    <comment><![CDATA[<small>[name] = Product Name<br />[description] = Description<br />[attribute_code] = Attribute Value<br /><strong>For example: [name] - [description].</strong></small><br />Recommendation Meta title – <b>65 characters</b>.]]>
+                    </comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_keyword" translate="Meta Keyword" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Keyword</label>
+                    <comment><![CDATA[Recommendation Meta keywords – <b>No more than 10 keyword phrases</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+                <field id="meta_description" translate="Meta Description" type="textarea" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description</label>
+                    <comment><![CDATA[Recommendation Meta description – <b>160 characters</b>]]></comment>
+                    <depends><field id="enabled">1</field></depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

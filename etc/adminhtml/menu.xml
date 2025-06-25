@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ManiyaTech
+ *
+ * @author        Milan Maniya
+ * @package       ManiyaTech_Seo
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="ManiyaTech_Seo::main" title="Meta Detail" translate="Meta Detail" module="ManiyaTech_Seo" parent="ManiyaTech_Core::core" sortOrder="110" resource="ManiyaTech_Seo::main" dependsOnConfig="seo_config/general/enabled"/>
+
+        <add id="ManiyaTech_Seo::configuration_menu" title="Configurations" module="ManiyaTech_Seo" parent="ManiyaTech_Seo::main" sortOrder="20" action="admin/system_config/edit/section/seo_config" resource="ManiyaTech_Seo::configuration_menu" target="_blank"/>
+    </menu>
+</config>

@@ -1,0 +1,25 @@
+{
+    "name": "maniyatech/magento2-seo",
+    "description": "Adds dynamic meta title, keywords, and description to product and category pages based on custom admin configuration to improve SEO.",
+    "require": {
+        "maniyatech/module-core": "*"
+    },
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "1.0.0",
+    "authors": [
+        {
+          "name": "ManiyaTech",
+          "email": "help.maniyatech@gmail.com",
+          "role": "Technical Support"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ManiyaTech\\Seo\\": ""
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ManiyaTech
+ *
+ * @author        Milan Maniya
+ * @package       ManiyaTech_Seo
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Controller\Category\View">
+        <plugin name="update_category_meta" type="ManiyaTech\Seo\Plugin\CategoryMetaPlugin" sortOrder="10"/>
+    </type>
+    <type name="Magento\Catalog\Helper\Product">
+        <plugin name="update_product_meta" type="ManiyaTech\Seo\Plugin\ProductMetaPlugin" sortOrder="10"/>
+    </type>
+</config>
